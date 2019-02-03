@@ -33,10 +33,10 @@
 
     <!-- Page Contents -->
     <div class="pusher">
-        <div class="ui inverted vertical masthead center aligned segment">
+        <div class="ui inverted vertical masthead center aligned segment" id="main-image">
 
             <div class="ui container">
-                <div class="ui large secondary inverted pointing menu">
+                <div class="ui large secondary inverted pointing menu" id="top-menu">
                     <a class="toc item">
                         <i class="sidebar icon"></i>
                     </a>
@@ -53,10 +53,10 @@
 
             <div class="ui text container">
                 <h1 class="ui inverted header">
-                    Imagine-a-Company
+
                 </h1>
-                <h2>Do whatever you want when you want to.</h2>
-                <div class="ui huge primary button" id="xxx">Get Started <i class="right arrow icon"></i></div>
+                <h2>Design your future with us</h2>
+                <div class="ui huge primary button" data-tooltip="Give us your feedback!" data-position="bottom center" id="xxx">Get Started <i class="right arrow icon"></i></div>
             </div>
         </div>
 
@@ -70,7 +70,7 @@
                         <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
                     </div>
                     <div class="six wide right floated column">
-                        <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+                        <img src="{{ asset('build/assets/images/string_theoryh.jpg') }}" class="ui large bordered rounded image">
                     </div>
                 </div>
                 <div class="row">
@@ -146,5 +146,4 @@
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
-
 {% endblock %}

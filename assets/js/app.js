@@ -9,37 +9,32 @@
 require('../css/app.css');
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
-// const $ = require('jquery');
 
 console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 
-const $ = require('jquery');
 
-$(document)
-    .ready(function() {
+import $ from 'jquery';
 
-        // fix menu when passed
-        $('.masthead')
-            .visibility({
-                once: false,
-                onBottomPassed: function() {
-                    $('.fixed.menu').transition('fade in');
-                },
-                onBottomPassedReverse: function() {
-                    $('.fixed.menu').transition('fade out');
-                }
-            })
-        ;
+$(document).ready(function() {
 
-        // create sidebar and attach to menu open
-        $('.ui.sidebar')
-            .sidebar('attach events', '.toc.item')
-        ;
-
-        $('body').on('click', '#xxx', function() {
+    // fix menu when passed
+    $('.masthead')
+        .visibility({
+            once: false,
+            onBottomPassed: function() {
+                $('.fixed.menu').transition('fade in');
+            },
+            onBottomPassedReverse: function() {
+                $('.fixed.menu').transition('fade out');
+            }
         });
 
-    })
-;
+    // create sidebar and attach to menu open
+    $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item');
+});
+
+const imagesContext = require.context('../images', true, /\.(png|jpg|jpeg|gif|ico|svg|webp)$/);
+imagesContext.keys().forEach(imagesContext);
 
 
