@@ -12,11 +12,11 @@
     <body>
         {% block body %}{% endblock %}
         {% block javascripts %}
+            <script src="{{ asset('build/runtime.js') }}"></script>
             <script src="{{ asset('build/semantic_styles.js') }}"></script>
             <script src="{{ asset('build/semantic_javascripts.js') }}"></script>
             <script src="{{ asset('build/app.js') }}"></script>
             <script src="{{ asset('build/base.js') }}"></script>
-            <script src="{{ asset('build/runtime.js') }}"></script>
         {% endblock %}
     </body>
 </html>
