@@ -1,2 +1,2 @@
-# agat-semantic
-Agat Company web page with Symfony elements
+# qbyte limited company 
+QBYTE LTD web page with Symfony elements
