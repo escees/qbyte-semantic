@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="ui vertical stripe segment">
+        <div class="ui middle aligned stackable grid container">
+            {#<div class="row">#}
+                {#<div class="eight wide column">#}
+                    {#<h3 class="ui header">We help Companies in their digital transformation</h3>#}
+                    {#<p>We can give you new possibilities.</p>#}
+                    {#<h3 class="ui header">We make bananas that can dance :)</h3>#}
+                    {#<p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered!</p>#}
+                {#</div>#}
+                {#<div class="six wide right floated column">#}
+                    {#<img src="{{ asset('build/assets/images/string_theoryh.jpg') }}" class="ui large bordered rounded image">#}
+                {#</div>#}
+            {#</div>#}
+            {#<div class="row">#}
+                {#<div class="center aligned column">#}
+                    {#<a class="ui huge button">Check Them Out</a>#}
+                {#</div>#}
+            {#</div>#}
+            <div class="ui cards">
+                <div class="ui card">
+                    <div class="ui slide masked reveal image">
+                        <img src="{{ asset('build/assets/images/fidex_front.20ad8011.png') }}" class="visible content" />
+                        <img src="{{ asset('build/assets/images/table-with-documents.81d6b09d.jpg') }}" class="hidden content" />
+                    </div>
+                    <div class="content">
+                        <a class="header" href="https://fidex.net.pl" target="_blank">
+                            <i class="users icon"></i>
+                            Fidex
+                        </a>
+                        <div class="meta">
+                            <span class="date">Created in December 2018</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <p>
+                            Landing page created for an Accountant Company
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ui card">
+                    <div class="ui slide masked reveal image">
+                        {#<img src="/images/avatar/large/jenny.jpg" class="visible content">#}
+                        {#<img src="/images/avatar/large/elliot.jpg" class="hidden content">#}
+                    </div>
+                    <div class="content">
+                        <a class="header">Team Fu &amp; Hess</a>
+                        <div class="meta">
+                            <span class="date">Created in Sep 2014</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="users icon"></i>
+                            2 Members
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ui card">
+                    <div class="ui slide masked reveal image">
+                        {#<img src="/images/avatar/large/jenny.jpg" class="visible content">#}
+                        {#<img src="/images/avatar/large/elliot.jpg" class="hidden content">#}
+                    </div>
+                    <div class="content">
+                        <a class="header">Team Fu &amp; Hess</a>
+                        <div class="meta">
+                            <span class="date">Created in Sep 2014</span>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i class="users icon"></i>
+                            2 Members
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
