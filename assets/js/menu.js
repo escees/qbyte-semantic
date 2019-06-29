@@ -1,6 +1,15 @@
 $(document).ready(function () {
-    $(".item").click(function () {
-        $(".item").removeClass("active");
-        $(this).addClass("active");
-    });
+    var setDefaultActive = function() {
+        var path = window.location.pathname;
+        var menuItem = $(".top-menu .item[href='" + path + "']");
+
+        menuItem.addClass("active");
+    };
+
+    setDefaultActive();
+
+    $('.ui.dropdown').dropdown({
+        on: 'hover',
+    })
+    ;
 });

@@ -12,7 +12,6 @@ require('../css/app.css');
 
 console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 
-
 import $ from 'jquery';
 
 $(document).ready(function() {
@@ -32,9 +31,15 @@ $(document).ready(function() {
     // create sidebar and attach to menu open
     $('.ui.sidebar')
         .sidebar('attach events', '.toc.item');
+
+    particlesJS.load('particles-js', '../particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
 });
 
 const imagesContext = require.context('../images', true, /\.(png|jpg|jpeg|gif|ico|svg|webp)$/);
 imagesContext.keys().forEach(imagesContext);
+
+
 
 
